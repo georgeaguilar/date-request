@@ -21,7 +21,7 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
   }
 
   const inputClass =
-    "w-full min-w-0 px-3 py-2 rounded-xl border border-rose-900/50 bg-rose-950/30 text-rose-100 text-sm outline-none focus:border-rose-500 focus:ring-2 focus:ring-rose-900/50 transition [color-scheme:dark]";
+    "block w-full px-3 py-2.5 rounded-xl border border-rose-900/50 bg-rose-950/30 text-rose-100 text-sm outline-none focus:border-rose-500 focus:ring-2 focus:ring-rose-900/50 transition [color-scheme:dark] box-border";
 
   return (
     <div>
@@ -32,34 +32,31 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
         Escoge el día y la hora perfectos
       </p>
 
-      <div className="flex gap-3 items-end mb-5">
-        <div className="flex-1 min-w-0">
-          <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
-            Día de la cita
-          </label>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            className={inputClass}
-          />
-        </div>
-        <div className="shrink-0">
-          <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
-            Hora
-          </label>
-          <input
-            type="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            className={inputClass}
-          />
-        </div>
-      </div>
+      <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
+        Día de la cita
+      </label>
+      <input
+        type="date"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
+        className={inputClass}
+        style={{ maxWidth: "100%" }}
+      />
+
+      <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5 mt-4">
+        ¿A qué hora?
+      </label>
+      <input
+        type="time"
+        value={time}
+        onChange={(e) => setTime(e.target.value)}
+        className={inputClass}
+        style={{ maxWidth: "100%" }}
+      />
 
       <button
         onClick={handleNext}
-        className="w-full py-4 rounded-full bg-linear-to-br from-rose-500 to-rose-700 text-white shadow-lg shadow-rose-900/50 hover:-translate-y-0.5 transition-all"
+        className="w-full py-4 rounded-full bg-linear-to-br from-rose-500 to-rose-700 text-white shadow-lg shadow-rose-900/50 hover:-translate-y-0.5 transition-all mt-5"
       >
         Continuar →
       </button>
