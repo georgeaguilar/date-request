@@ -42,11 +42,11 @@ export default function DateRequest() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fdf6f0] flex items-center justify-center px-4 py-8 relative">
+    <div className="min-h-screen bg-[#0e0814] flex items-center justify-center px-4 py-8 relative">
       <Petals />
 
       <div className="relative z-10 w-full max-w-md">
-        <div className="bg-white rounded-3xl p-5 sm:p-10 shadow-[0_8px_60px_rgba(232,82,106,0.12)] border border-rose-100/60 relative overflow-hidden">
+        <div className="bg-[#170d1a] rounded-3xl p-5 sm:p-10 shadow-[0_8px_60px_rgba(180,30,80,0.18)] border border-rose-900/40 relative overflow-hidden">
           {/* Top gradient bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-rose-200 via-rose-500 to-amber-400 rounded-t-3xl" />
 

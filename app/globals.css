@@ -5,6 +5,11 @@
   --font-serif: 'Playfair Display', serif;
 }
 
+html, body {
+  background-color: #0e0814;
+  color-scheme: dark;
+}
+
 @keyframes fall {
   0%   { transform: translateY(-30px) rotate(0deg);   opacity: 0.85; }
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }

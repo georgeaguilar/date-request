@@ -29,17 +29,17 @@ export default function Step1Question({ onYes }: Props) {
         alt="love"
       />
       <div className="text-4xl sm:text-5xl text-center mb-4 animate-heartbeat">💌</div>
-      <h1 className="font-serif text-xl sm:text-2xl text-center text-stone-800 leading-snug mb-2">
+      <h1 className="font-serif text-xl sm:text-2xl text-center text-rose-50 leading-snug mb-2">
         Dayana,{" "}
-        <em className="text-rose-600">¿quieres tener una cita conmigo?</em>
+        <em className="text-rose-400">¿quieres tener una cita conmigo?</em>
       </h1>
-      <p className="text-center text-stone-400 text-sm font-light mb-7">
+      <p className="text-center text-rose-300/50 text-sm font-light mb-7">
         Tengo algo especial planeado para nosotros ✨
       </p>
       <div className="flex gap-4 justify-center relative">
         <button
           onClick={onYes}
-          className="flex-1 max-w-[180px] py-4 rounded-full bg-linear-to-br from-rose-400 to-rose-600 text-white text-lg shadow-lg shadow-rose-200 hover:-translate-y-0.5 hover:shadow-xl transition-all"
+          className="flex-1 max-w-[180px] py-4 rounded-full bg-linear-to-br from-rose-500 to-rose-700 text-white text-lg shadow-lg shadow-rose-900/50 hover:-translate-y-0.5 hover:shadow-xl transition-all"
         >
           ¡Sí, claro! 💕
         </button>
@@ -47,7 +47,7 @@ export default function Step1Question({ onYes }: Props) {
           ref={noRef}
           onMouseEnter={runAway}
           onTouchStart={(e) => { e.preventDefault(); runAway(); }}
-          className="flex-1 max-w-[120px] py-4 rounded-full border border-stone-200 text-stone-400 text-sm font-light cursor-default select-none"
+          className="flex-1 max-w-[120px] py-4 rounded-full border border-rose-900/40 text-rose-400/30 text-sm font-light cursor-default select-none"
         >
           No
         </button>

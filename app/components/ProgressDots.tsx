@@ -14,10 +14,10 @@ export default function ProgressDots({ current }: Props) {
           key={i}
           className={`w-2 h-2 rounded-full transition-all duration-300 ${
             i < current
-              ? "bg-rose-200"
+              ? "bg-rose-800"
               : i === current
-              ? "bg-rose-500 scale-125"
-              : "bg-rose-100"
+              ? "bg-rose-400 scale-125"
+              : "bg-rose-900/60"
           }`}
         />
       ))}
