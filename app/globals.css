@@ -10,12 +10,6 @@ html, body {
   color-scheme: dark;
 }
 
-/* Opciones de <select> en dark mode */
-select option {
-  background-color: #1e0d18;
-  color: #ffe4ef;
-}
-
 @keyframes fall {
   0%   { transform: translateY(-30px) rotate(0deg);   opacity: 0.85; }
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
