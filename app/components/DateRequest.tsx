@@ -48,8 +48,6 @@ export default function DateRequest() {
       <div className="relative z-10 w-full max-w-md">
         <div className="bg-[#170d1a] rounded-3xl p-5 sm:p-10 shadow-[0_8px_60px_rgba(180,30,80,0.18)] border border-rose-900/40 relative overflow-hidden">
           {/* Top gradient bar */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-rose-900/50 rounded-t-3xl" />
-
           {/* Step transitions */}
           <div key={step} className="animate-stepIn">
             {step === 1 && (
