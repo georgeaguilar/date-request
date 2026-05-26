@@ -21,7 +21,7 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
   }
 
   const inputClass =
-    "w-full min-w-0 px-4 py-3 rounded-xl border border-rose-900/50 bg-rose-950/30 text-rose-100 text-sm outline-none focus:border-rose-500 focus:ring-2 focus:ring-rose-900/50 transition [color-scheme:dark]";
+    "w-full min-w-0 px-3 py-2 rounded-xl border border-rose-900/50 bg-rose-950/30 text-rose-100 text-sm outline-none focus:border-rose-500 focus:ring-2 focus:ring-rose-900/50 transition [color-scheme:dark]";
 
   return (
     <div>
@@ -32,28 +32,29 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
         Escoge el día y la hora perfectos
       </p>
 
-      <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
-        Día de la cita
-      </label>
-      <div className="w-full overflow-hidden rounded-xl mb-4">
-        <input
-          type="date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-          className={inputClass}
-        />
-      </div>
-
-      <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
-        ¿A qué hora?
-      </label>
-      <div className="w-full overflow-hidden rounded-xl mb-5">
-        <input
-          type="time"
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-          className={inputClass}
-        />
+      <div className="grid grid-cols-[1fr_auto] gap-3 items-end mb-5">
+        <div>
+          <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
+            Día de la cita
+          </label>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            className={inputClass}
+          />
+        </div>
+        <div>
+          <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
+            Hora
+          </label>
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            className={inputClass}
+          />
+        </div>
       </div>
 
       <button
