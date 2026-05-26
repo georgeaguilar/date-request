@@ -32,8 +32,8 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
         Escoge el día y la hora perfectos
       </p>
 
-      <div className="grid grid-cols-[1fr_auto] gap-3 items-end mb-5">
-        <div>
+      <div className="flex gap-3 items-end mb-5">
+        <div className="flex-1 min-w-0">
           <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
             Día de la cita
           </label>
@@ -44,7 +44,7 @@ export default function Step2DateTime({ initialDate, initialTime, onNext, onBack
             className={inputClass}
           />
         </div>
-        <div>
+        <div className="shrink-0">
           <label className="block text-[10px] uppercase tracking-widest text-rose-400/60 mb-1.5">
             Hora
           </label>
