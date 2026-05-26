@@ -16,7 +16,7 @@ export default function Step3Food({ initialFood, onNext, onBack }: Props) {
   return (
     <div>
       <GifBanner
-        src="https://media.tenor.com/eSPFgSGgmSAAAAAC/food-yummy.gif"
+        src="/gifs/food.gif"
         alt="food"
       />
       <h2 className="font-serif text-xl text-stone-800 mb-1">🍽️ ¿Qué se te antoja?</h2>
@@ -44,7 +44,7 @@ export default function Step3Food({ initialFood, onNext, onBack }: Props) {
       <button
         disabled={!selected}
         onClick={() => onNext(selected)}
-        className="w-full py-4 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 text-white shadow-lg shadow-rose-200 hover:-translate-y-0.5 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+        className="w-full py-4 rounded-full bg-linear-to-br from-rose-400 to-rose-600 text-white shadow-lg shadow-rose-200 hover:-translate-y-0.5 transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0"
       >
         Continuar →
       </button>

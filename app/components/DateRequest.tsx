@@ -46,9 +46,9 @@ export default function DateRequest() {
       <Petals />
 
       <div className="relative z-10 w-full max-w-md">
-        <div className="bg-white rounded-3xl p-10 shadow-[0_8px_60px_rgba(232,82,106,0.12)] border border-rose-100/60 relative overflow-hidden">
+        <div className="bg-white rounded-3xl p-5 sm:p-10 shadow-[0_8px_60px_rgba(232,82,106,0.12)] border border-rose-100/60 relative overflow-hidden">
           {/* Top gradient bar */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-rose-200 via-rose-500 to-amber-400 rounded-t-3xl" />
+          <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-rose-200 via-rose-500 to-amber-400 rounded-t-3xl" />
 
           {/* Step transitions */}
           <div key={step} className="animate-stepIn">

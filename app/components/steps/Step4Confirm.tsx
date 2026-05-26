@@ -21,7 +21,7 @@ export default function Step4Confirm({ date, time, food, onSend, onBack }: Props
   return (
     <div>
       <GifBanner
-        src="https://media.tenor.com/agNRFVKValoAAAAC/hearts-love.gif"
+        src="/gifs/hearts.gif"
         alt="hearts"
       />
       <h2 className="font-serif text-xl text-stone-800 mb-1">💫 ¡Todo listo!</h2>
@@ -29,10 +29,10 @@ export default function Step4Confirm({ date, time, food, onSend, onBack }: Props
         Confirma los detalles de tu cita
       </p>
 
-      <div className="bg-gradient-to-br from-rose-50 to-amber-50 border border-rose-100 rounded-2xl p-4 mb-5 space-y-3">
+      <div className="bg-linear-to-br from-rose-50 to-amber-50 border border-rose-100 rounded-2xl p-4 mb-5 space-y-3">
         {rows.map((row, i) => (
           <div key={i}>
-            {i > 0 && <div className="h-px bg-gradient-to-r from-transparent via-rose-200 to-transparent mb-3" />}
+            {i > 0 && <div className="h-px bg-linear-to-r from-transparent via-rose-200 to-transparent mb-3" />}
             <div className="flex items-start gap-3">
               <span className="text-base">{row.icon}</span>
               <div>
@@ -48,7 +48,7 @@ export default function Step4Confirm({ date, time, food, onSend, onBack }: Props
 
       <button
         onClick={onSend}
-        className="w-full py-4 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 text-white shadow-lg shadow-rose-200 hover:-translate-y-0.5 transition-all"
+        className="w-full py-4 rounded-full bg-linear-to-br from-rose-400 to-rose-600 text-white shadow-lg shadow-rose-200 hover:-translate-y-0.5 transition-all"
       >
         Enviar a Jorge 💌
       </button>

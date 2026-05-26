@@ -28,8 +28,8 @@ export default function Step1Question({ onYes }: Props) {
         src="https://media.tenor.com/x8v1oNUOmg4AAAAC/cute-love.gif"
         alt="love"
       />
-      <div className="text-5xl text-center mb-4 animate-heartbeat">💌</div>
-      <h1 className="font-serif text-2xl text-center text-stone-800 leading-snug mb-2">
+      <div className="text-4xl sm:text-5xl text-center mb-4 animate-heartbeat">💌</div>
+      <h1 className="font-serif text-xl sm:text-2xl text-center text-stone-800 leading-snug mb-2">
         Dayana,{" "}
         <em className="text-rose-600">¿quieres tener una cita conmigo?</em>
       </h1>
@@ -39,7 +39,7 @@ export default function Step1Question({ onYes }: Props) {
       <div className="flex gap-4 justify-center relative">
         <button
           onClick={onYes}
-          className="flex-1 max-w-[180px] py-4 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 text-white text-lg shadow-lg shadow-rose-200 hover:-translate-y-0.5 hover:shadow-xl transition-all"
+          className="flex-1 max-w-[180px] py-4 rounded-full bg-linear-to-br from-rose-400 to-rose-600 text-white text-lg shadow-lg shadow-rose-200 hover:-translate-y-0.5 hover:shadow-xl transition-all"
         >
           ¡Sí, claro! 💕
         </button>
